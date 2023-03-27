@@ -1,0 +1,30 @@
+header{
+    width: 100%;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+header h1{
+    text-align: center;
+}
+
+header div{
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+header div img, header div ul{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header div img{
+    border-radius: 35px;       /* Hago la foto circular */
+}
+
+header div ul{
+    list-style-type: circle;
+    text-align: left;
+}
