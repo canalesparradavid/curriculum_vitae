@@ -1,3 +1,11 @@
+<?php
+
+//Calculo auntomaticamente mi edad
+$edad = time()-strtotime("2000/03/01");
+$edad = intval($edad*3.17098e-8);
+
+?>
+
 <html>
     <head>
         <title>Curriculum Vitae</title>
@@ -11,7 +19,7 @@
             <div>
                 <img width="100" height="131" src="img/perfil.png">
                 <ul>
-                    <li>23 años (01/03/2000)</li>
+                    <li><?php echo $edad; ?> años (01/03/2000)</li>
                     <li>DNI: 43222197E</li>
                     <li>Domicilio en Navarra</li>
                     <li>Vehiculo propio</li>
@@ -28,9 +36,16 @@
                     </ul>
             </section>
             <section>
+                <h2>Disponibilidad</h2>
+                    <p>
+                        Dispuesto a relizar un trabajo a media jornada concentrada en fines de semana hasta la finalización
+                        de mis estudios, una vez finalizados total disponibilidad.
+                    </p>
+            </section>
+            <section>
                 <h2>Experiencia</h2>
                     <ul>
-                        <li>Talleres de robotica y programación para niños</li>
+                        <li>Impartición de taller de robotica y programación para niños (LEGO Mindstorms)</li>
                         <li>Hosteleria. Empresa: Restauracion Hambar Cuatro. Año 2019 a 2023</li>
                         <li>Corresponsal Informativo. Empresa: Ayuntamiento de Pamplona. Año 2018</li>
                         <li>Preparacion de centro escolar para nuevo curso. Empresa: Fomento de centros de enseñanza. Año 2017</li>
@@ -40,15 +55,16 @@
                 <h2>Idiomas</h2>
                     <ul>
                         <li>Ingles avanzado Hablado y Escrito (Cambridge B2)</li>
-                        <li>Frances: Entendido y escrito</li>
+                        <li>Frances: Entendido</li>
                     </ul>
             </section>
             <section>
                 <h2>Otra informacion</h2>
                     <ul>
                         <li>Carnet conducir B</li>
+                        <li>Autodidacta en nuevos lenguajes de programación</li>
                         <li>Conocimientos avazados de Microsoft Office 365</li>
-                        <li>Certificate professional training at JIKEI COM GROUP (Julio 2016 Tokyo).</li>
+                        <li>Certificate professional training at JIKEI COM GROUP (Julio 2016 Tokyo)</li>
                     </ul>
             </section>
             <section>
@@ -64,7 +80,9 @@
             <h2>Informacion de contacto:</h2>
             <table>
                 <tr><td>Email:</td><td><a href="mailto:canalesparradavid@gmail.com" target="_blank">canalesparradavid@gmail.com</a></td></tr>
-                <tr><td>WhatsApp:</td><td><a href="https://api.whatsapp.com/send?phone=+34634428000"  target="_blank">+34 634428000</a></td></tr>
+                <tr><td>Linkedin:</td><td><a href="https://www.linkedin.com/in/david-canales-parra-4b92a020b/" target="_blank">David Canales Parra</a></td></tr>
+                <tr><td>Github:</td><td><a href="https://github.com/canalesparradavid/" target="_blank">canalesparradavid</a></td></tr>
+                <tr><td>WhatsApp:</td><td><a href="https://web.whatsapp.com/send/?phone=%2B34634428000&text&type=phone_number&app_absent=0"  target="_blank">+34 634428000</a></td></tr>
             </table>
         </footer>
     </body>
