@@ -24,3 +24,9 @@ section section{
 section section h2{
     font-size: 1.3em;
 }
+
+section span{
+    display: block;
+    padding-left: 25px;
+    margin-bottom: 5px;
+}
